@@ -1,16 +1,11 @@
 // Write your code here!
-let element = document.createElement('div') 
-document.body.appendChild(element)
+const testVar = "hi"
 
-let ul = document.createElement('ul')
 
-for (let i = 0; i < 3; 1++) { 
-    let li = document.createElement('li')
-    li.innerHTML = (i + 1).toString()
-    ul.appendChild(li)
-}
+document.querySelector("main#main").remove();
 
-element.appendChild(ul)
 
-let element = document.querySelector("p#greeting");
-element.innerHTML = 'Hello, Dom!'
+const newHeader = document.createElement("h1");
+newHeader.id = "victory"
+newHeader.innerHTML = "Flatiron School is the champion!";
+newHeader.className = "victory";
